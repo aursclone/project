@@ -55,7 +55,7 @@ background: url(p.jpg) no-repeat center center fixed;
 
 .input-box label {
   position: relative;
-  bottom: 37px;
+  bottom: 30px;
   left: 5px;
   transform: translateY(-50%);
   font-size: 20px;
@@ -79,7 +79,7 @@ background: url(p.jpg) no-repeat center center fixed;
   font-size: 0.9rem;
   font-weight: 500;
   color: rgba(0,0,0,0.9);
-  padding: 0 35px 0 5px;
+  padding: 0 50px 0 10px;
 }
 
 .input-box .icon {
