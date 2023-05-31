@@ -7,18 +7,57 @@
   text-decoration: none;
 }
 
+
+
+
 body {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   min-height: 650px;
 background: url(p.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
 }
 
+.notif {
+  width: 230px;
+  height: 50px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 10px;
+  position: absolute;
+  top: -100%; /* Posisi awal di luar kotak */
+  transition: top 0.5s ease-in-out
+}
+
+
+
+.notif .logole {
+  position: relative;
+  left: 8px;
+  animation: none;
+}
+
+.notif p {
+ position: relative;
+ left: 30px;
+  text-align: center;
+  font-size: 5px;
+  font-weight: 700;
+}
+
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(10deg); }
+  50% { transform: rotate(-10deg); }
+  75% { transform: rotate(10deg); }
+  100% { transform: rotate(0deg); }
+}
 
 .login {
   position: relative;
@@ -29,9 +68,6 @@ background: url(p.jpg) no-repeat center center fixed;
   border-radius: 30px;
   backdrop-filter: blur(2px);
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .login .form-box {
@@ -101,6 +137,11 @@ background: url(p.jpg) no-repeat center center fixed;
   font-weight: 500;
 }
 
+
+.btn:active {
+  background-color: red;
+}
+
 .l-register {
   text-align: center;
   margin: 25px 0 10px;
@@ -108,6 +149,11 @@ background: url(p.jpg) no-repeat center center fixed;
   font-weight: 500;
 }
 
+.l-register p {
+  color: red;
+}
+
 .l-register .register {
   color: green;
+  font-size: 20px;
 }
