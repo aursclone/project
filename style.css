@@ -17,9 +17,9 @@ body {
   display: flex;
   font-size: 2rem;
   font-weight: 700;
-  color: black;
+  color: red;
 }
 
 .navbar span {
-  color: green;
+  color: blue;
 }
